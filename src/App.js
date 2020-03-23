@@ -88,7 +88,7 @@ class App extends React.Component {
 							<select onChange={this.filter}>
 								<option value="timestamp">Newest</option>
 								<option value="views">Most Viewed</option>
-								<option value="likes">Most Lieked</option>
+								<option value="likes">Most Liked</option>
 							</select>
 						</div>
 						<div className="videos">
