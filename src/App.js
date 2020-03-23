@@ -10,6 +10,7 @@ class App extends React.Component {
 		loading: true
 	};
 	componentDidMount() {
+		console.log(process.env);
 		this.fetchInstagramData();
 		this.fetchYoutubeData();
 	}
