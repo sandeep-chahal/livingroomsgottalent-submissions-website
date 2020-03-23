@@ -10,7 +10,6 @@ class App extends React.Component {
 		loading: true
 	};
 	componentDidMount() {
-		console.log(process.env);
 		this.fetchInstagramData();
 		this.fetchYoutubeData();
 	}
@@ -40,7 +39,7 @@ class App extends React.Component {
 
 	fetchYoutubeData = nextPage => {
 		fetch(
-			`https://www.googleapis.com/youtube/v3/search?part=snippet,id&q=livingroomsgottalent&maxResults=50&type=video&nextPageToken&key=${process.env.ytapikey}` +
+			`https://www.googleapis.com/youtube/v3/search?part=snippet,id&q=livingroomsgottalent&maxResults=50&type=video&nextPageToken&key=${process.env.REACT_APP_KEY}` +
 				(nextPage ? "&pageToken=" + nextPage : "")
 		)
 			.then(res => res.json())
