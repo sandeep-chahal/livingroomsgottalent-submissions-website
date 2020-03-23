@@ -39,7 +39,7 @@ class App extends React.Component {
 
 	fetchYoutubeData = nextPage => {
 		fetch(
-			`https://www.googleapis.com/youtube/v3/search?part=snippet,id&q=livingroomsgottalent&maxResults=50&type=video&nextPageToken&key=${process.env.REACT_APP_KEY}` +
+			`https://www.googleapis.com/youtube/v3/search?part=snippet,id&q=livingroomsgottalent&maxResults=50&type=video&nextPageToken&key=AIzaSyDScYBnM5FCPZcoqqyVYLtKScLomQzn5FE` +
 				(nextPage ? "&pageToken=" + nextPage : "")
 		)
 			.then(res => res.json())
